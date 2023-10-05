@@ -3,82 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuntosaliharjoitteluvinkit</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>fakePT - Älä usko näitä vinkkejä</title>
+    <link rel="stylesheet" href="css/mainpage.css" type="text/css">
 </head>
 <body>
     <header>
         <img src="assets/pictures/mainpageup2.jpg" alt="Kuva liikkeestä">
-        <h1>Harjoitteluvinkit</h1>
+        <br><br>
+        <h1>fakePT</h1><br>
+        <label class="switch">
+            <input type="checkbox" id="darkModeSwitch">
+            <div class="slider round">
+                <span class="switch-text-right">Tumma tila:</span>
+            </div>
+        </label><br>
     </header>
-    <div class="sarakkeet">
-        <div class="sarakkeen-osa">
-            <a href="treenivinkit.html">
-                <img src="polku/treenivinkit-kuva.jpg" alt="Treenivinkit">
-                <p>Treenivinkit</p>
-            </a>
-        </div>
-        <div class="sarakkeen-osa">
-            <a href="treeniohjelmat.html">
-                <img src="polku/treeniohjelmat-kuva.jpg" alt="Treeniohjelmat">
-                <p>Treeniohjelmat</p>
-            </a>
-        </div>
-        <div class="sarakkeen-osa">
-            <a href="ruokavalio.html">
-                <img src="polku/ruokavalio-kuva.jpg" alt="Ruokavalio">
-                <p>Ruokavalio</p>
-            </a>
-        </div>
-    </div>
-    <div class="container">
-        <label for="lihasryhma">Valitse lihasryhmä:</label>
-        <select id="lihasryhma">
-            <option value="rinta">Rinta</option>
-            <option value="selka">Selkä</option>
-            <option value="jalat">Jalat</option>
-            <option value="ojentaja">Ojentaja</option>
-            <option value="kadet">Kädet</option>
-            <option value="olkapaat">Olkapäät</option>
-            <option value="hauis">Hauis</option>
-            <option value="vatsa">Vatsa</option>
+    <br>
+        <p>fakePT on sivusto, joka tarjoaa harjoitteluvinkkejä kotiin ja kuntosalille. 
+            Sivusto tarjoaa myös treeniohjelmia ja niihin sopivia ruokavalioita.*</p>
+        <!--  tähän kuvat "harjoitteluvinkit", "treeniohjelmat", "ruokavalio"  -->
+        <!-- -->
+        <br><br><br>
 
 
-            <!-- Lisää muita lihasryhmiä tarvittaessa -->
-        </select>
-        <button id="naytaLiike">Näytä liike</button>
-        <div id="liikkeenKuvaus">
-            <!-- Tähän tulee liikkeen kuvaus -->
+        <div class="sarakkeet">
+            <div class="sarakkeen-osa">
+                <a href="harjoitteluvinkit.html">
+                    <img src="assets/pictures/sports-1975689_1280.png" title="Harjoitteluohjeet" alt="Harjoitteluohjeet"><br><br>
+                    <h2>Harjoitteluohjeet</h2>
+                    <p>Harjoitteluvinkit-sivulta löydät liikkeitä eri lihasryhmille. 
+                        Liikkeiden kuvaukset ovat lyhyitä ja ytimekkäitä. 
+                        Liikkeiden kuvauksissa on myös linkki videoon, jossa liike näytetään.</p>
+                </a>
+            </div>
+            <div class="sarakkeen-osa">
+                <a href="treeniohjelmat.html">
+                    <img src="assets/pictures/pexels-karolina-grabowska-4397841.jpg" title="Treeniohjelmat" alt="Treeniohjelmat"><br><br>
+                    <h2>Treeniohjelmat</h2>
+                    <p>Treeniohjelmat-sivulta löydät erilaisia treeniohjelmia. 
+                        Treeniohjelmat on jaettu eri tavoitteiden mukaan. 
+                        Treeniohjelmat on jaettu myös eri tasoihin. 
+                        Treeniohjelmat on jaettu myös eri lihasryhmien mukaan.</p>
+                </a>
+            </div>
+            <div class="sarakkeen-osa">
+                <a href="ruokavalio.html">
+                    <img src="assets/pictures/Burgeri.jpg" title="Ruokavaliot" alt="Ruokavalio"><br><br>
+                    <h2>Ruokavaliot</h2>
+                    <p>Ruokavalio-sivulta löydät erilaisia ruokavalioita. 
+                        Ruokavalioita on jaettu eri tavoitteiden ja treenikausien mukaan.</p>
+                </a>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <hr>
+        <p>*Sivusto on tehty vain läpällä kouluprojektia varten, 
+            eikä tekijällä ole mitään ammattitaitoa näihin asioihin, 
+            joten käytä vinkkejä omalla vastuullasi.</p>
         
-        <div id="liikkeenKuvaus"></div>
-        
-    <script src="assets/javascript/script.js"></script>
-</body>
-</html>
-
-
-<!--DOCTYPE html>
-<html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuntosaliharjoittelu</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Kuntosaliharjoittelu - Liikkeiden ohjeet</h1>
-    <label for="lihasryhma">Valitse lihasryhmä:</label>
-    <select id="lihasryhma">
-        <option value="rinta">Rinta</option>
-        <option value="selka">Selkä</option>
-        <option value="jalat">Jalat</option>
-        <option value="olkapaat">Olkapäät</option>
-        <option value="ojentaja">Ojentajat</option>
-        <option value="hauis">Hauis</option>
-        <option value="vatsa">Vatsa</option>
-    </select>
-    <button id="naytaLiike">Näytä liike</button>
-    <div id="liikkeenKuvaus"></div>
-    <script src="assets/javascript/script.js"></script>
+        <!--<p>Harjoitteluvinkit-sivulta löydät liikkeitä eri lihasryhmille. Liikkeiden kuvaukset ovat lyhyitä ja ytimekkäitä. Liikkeiden kuvauksissa on myös linkki videoon, jossa liike näytetään.</p>
+        <p>Treeniohjelmat-sivulta löydät erilaisia treeniohjelmia. Treeniohjelmat on jaettu eri tavoitteiden mukaan. Treeniohjelmat on jaettu myös eri tasoihin. Treeniohjelmat on jaettu myös eri lihasryhmien mukaan.</p>
+        <p>Ruokavalio-sivulta löydät erilaisia ruokavalioita. Ruokavalioita on jaettu eri tavoitteiden ja treenikausien mukaan.</p>
+        -->
+        <script src="assets/javascript/script.js"></script>
 </body>
 </html>
