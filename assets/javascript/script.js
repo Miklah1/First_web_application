@@ -1,11 +1,4 @@
 
-const darkModeSwitch = document.getElementById('darkModeSwitch');
-
-darkModeSwitch.addEventListener('change', () => {
-    const body = document.body;
-
-    body.classList.toggle('dark-mode');
-});
 
 
 
@@ -107,4 +100,13 @@ document.addEventListener("DOMContentLoaded", function () {
             liikkeenKuvausDiv.textContent = "Valitse oikea lihasryhmä.";
         }
     });
+});
+
+
+const darkModeSwitch = document.getElementById('darkModeSwitch');
+
+darkModeSwitch.addEventListener('change', () => {
+    const body = document.body;
+
+    body.classList.toggle('dark-mode');
 });
