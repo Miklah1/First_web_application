@@ -1,12 +1,84 @@
-<!DOCTYPE>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuntosaliharjoitteluvinkit</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body><h1>Moikka!</h1>
-<p>Miten koodaus sujuu?</p>
-<img src="assets/pictures/code.png" alt="Kuva koodista">
+<body>
+    <header>
+        <img src="assets/pictures/mainpageup2.jpg" alt="Kuva liikkeestä">
+        <h1>Harjoitteluvinkit</h1>
+    </header>
+    <div class="sarakkeet">
+        <div class="sarakkeen-osa">
+            <a href="treenivinkit.html">
+                <img src="polku/treenivinkit-kuva.jpg" alt="Treenivinkit">
+                <p>Treenivinkit</p>
+            </a>
+        </div>
+        <div class="sarakkeen-osa">
+            <a href="treeniohjelmat.html">
+                <img src="polku/treeniohjelmat-kuva.jpg" alt="Treeniohjelmat">
+                <p>Treeniohjelmat</p>
+            </a>
+        </div>
+        <div class="sarakkeen-osa">
+            <a href="ruokavalio.html">
+                <img src="polku/ruokavalio-kuva.jpg" alt="Ruokavalio">
+                <p>Ruokavalio</p>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <label for="lihasryhma">Valitse lihasryhmä:</label>
+        <select id="lihasryhma">
+            <option value="rinta">Rinta</option>
+            <option value="selka">Selkä</option>
+            <option value="jalat">Jalat</option>
+            <option value="ojentaja">Ojentaja</option>
+            <option value="kadet">Kädet</option>
+            <option value="olkapaat">Olkapäät</option>
+            <option value="hauis">Hauis</option>
+            <option value="vatsa">Vatsa</option>
+
+
+            <!-- Lisää muita lihasryhmiä tarvittaessa -->
+        </select>
+        <button id="naytaLiike">Näytä liike</button>
+        <div id="liikkeenKuvaus">
+            <!-- Tähän tulee liikkeen kuvaus -->
+        
+        <div id="liikkeenKuvaus"></div>
+        
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
+
+
+<!--DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuntosaliharjoittelu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kuntosaliharjoittelu - Liikkeiden ohjeet</h1>
+    <label for="lihasryhma">Valitse lihasryhmä:</label>
+    <select id="lihasryhma">
+        <option value="rinta">Rinta</option>
+        <option value="selka">Selkä</option>
+        <option value="jalat">Jalat</option>
+        <option value="olkapaat">Olkapäät</option>
+        <option value="ojentaja">Ojentajat</option>
+        <option value="hauis">Hauis</option>
+        <option value="vatsa">Vatsa</option>
+    </select>
+    <button id="naytaLiike">Näytä liike</button>
+    <div id="liikkeenKuvaus"></div>
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
