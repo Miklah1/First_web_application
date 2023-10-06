@@ -12,6 +12,10 @@ header {
     padding: 20px;
 }
 
+.dark-mode { /* Tumma tila */
+    background-color: #252525; /* Tumman tilan taustaväri */
+}
+
 .container {
     max-width: 600px;
     margin: 20px auto;
@@ -42,3 +46,5 @@ button {
     margin-top: 20px;
     font-weight: bold;
 }
+
+

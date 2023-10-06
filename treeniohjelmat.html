@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Treeniohjelmat</title>
+    <link rel="stylesheet" type="text/css" href="css/treeniohjelmat.css">
+</head>
+<body>
+    <header>
+        <h1>Treeniohjelmat</h1>
+    </header>
+    
+    <div class="question-container">
+        <h2>Tervetuloa treenaamaan!</h2>
+        <p>Vastaa muutamaan kysymykseen, jotta voimme räätälöidä sinulle sopivan treeniohjelman.</p>
+
+        <form id="treeni-form"></form>
+            <label for="age">Ikä:</label>
+            <select id="age" name="age" required>
+                <option value="" disabled selected>Valitse ikäsi</option>
+                <option value="15">15-20 vuotta</option>
+                <option value="21">21-25 vuotta</option>
+                <option value="26">26-35 vuotta</option>
+                <option value="36">36-45 vuotta</option>
+                <option value="46">46-55 vuotta</option>
+                <option value="56">56-65 vuotta</option>
+                <option value=">65">yli 65 vuotta</option>
+            </select><br>
+
+
+            <label for="goal">Treenaamisen tavoite:</label>
+            <select id="goal" name="goal" required>
+                <option value="" disabled selected>Valitse tavoitteesi</option>
+                <option value="Lihasmassan kasvatus">Lihasmassan kasvatus</option>
+                <option value="Liikkuvuuden parantaminen">Liikkuvuuden parantaminen</option>
+                <option value="Laihdutus">Laihdutus</option>
+            </select><br>
+
+            <label for="level">Taso treenaajana:</label>
+            <select id="level" name="level" required>
+                <option value="" disabled selected>Valitse tasosi</option>
+                <option value="Alottelija">Alottelija</option>
+                <option value="Harjaantunut">Harjaantunut</option>
+                <option value="Kokenut">Kokenut</option>
+            </select><br>
+
+            <button id="submit">Lähetä</button>
+        </form>
+    </div>
+    
+    <script src="assets/javascript/treeniohjelmat.js"></script>
+</body>
+</html>

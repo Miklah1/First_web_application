@@ -19,38 +19,16 @@ header img{
 
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
-    transition: color 0.5s; /* Animointi taustavärin muutokselle */
+    color: #ffffff;
     font-weight: 600;
     font-size: 100px;
     text-align: center;
     height: 100px;
 }
 
-input[type="checkbox"] {
-    display: none; /* Piilota oletusvalintanappi */
-}
-
-#darkModeLabel {
-    background-color: #666;
-    color: #fff;
-    border-radius: 10px; /* Pyöristetyt kulmat */
-    padding: 5px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#darkModeSwitch:checked + #darkModeLabel {
-    background-color: #333;
-}
-
 .dark-mode { /* Tumma tila */
     background-color: #252525; /* Tumman tilan taustaväri */
     /*color: #252525;  Tumman tilan tekstin väri */
-}
-
-.dark-mode-text {
-    color: #fff; /* Tumman tilan tekstiväri vain otsikolle */
 }
 
 p{
@@ -118,6 +96,10 @@ p{
     padding: 10px;
 }
 
+input[type="checkbox"] {
+    display: none; /* Piilota oletusvalintanappi */
+}
+
 .switch {
     position: relative;
     display: inline-block;
@@ -130,18 +112,13 @@ p{
     
 }
 
-.switch-text-left,
-.switch-text-right {
+.darkMode-text {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.switch-text-left {
-    left: 10px;
-}
-
-.switch-text-right {
+.darkMode-text {
     right: 10px;
 }
 
@@ -192,7 +169,7 @@ input:checked + .slider:before {
     content: "On";
 }
 
-.switch-text-right {
+.darkMode-text {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -200,6 +177,6 @@ input:checked + .slider:before {
     font-weight: bold;
 }
 
-.switch-text-right {
+.darkMode-text {
     right: 65px;
 }

@@ -1,6 +1,6 @@
 # Websovellusprojekti
-
-Harjoitteluvinkit ei toimi tumman tilan takia. Määritykset pitää järjestellä uudestaan .js
+Voimatasojen kasvattaminen, liikkuvuuden parantaminen, rasvaprosentin alentaminen
+Tasosi treenaajana aloittelija, harjaantunut ja kokenut (Beginner, intermediate, advanced).
 
 Kurssin arviointi 
 HTML (25%)
@@ -37,21 +37,19 @@ Comparing the types
 Styling demonstrates a strong grasp of layout principles, aesthetics, and user experience.
 
 JavaScript Basics (25%)
-1/5:
+1/5: OK "Tumma tila" -nappi
 Simple interactions (like alerts on button click).
 
 Learn about JS Alerts
-2/5:
+2/5: OK. mm. "Tumma tila" -nappi ja "Näytä liike" -nappi
 Multiple event listeners and basic DOM manipulations.
 
-Learn about Event Listeners
 3/5:
 Use of arrays, objects, and functions.
 
 4/5:
 Advanced logic, looping through data, and dynamic DOM updates.
 
-Learn about DOM Manipulation
 5/5:
 Consistent use of Object-Oriented JavaScript principles.
 

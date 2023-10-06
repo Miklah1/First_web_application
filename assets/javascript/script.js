@@ -1,6 +1,9 @@
 
 
+// script.js
 
+
+// Harjoitteluohjeet //
 
 document.addEventListener("DOMContentLoaded", function () {
     const lihasryhmaValinta = document.getElementById("lihasryhma");
@@ -103,6 +106,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+// Tumma tila //
+
 const darkModeSwitch = document.getElementById('darkModeSwitch');
 
 darkModeSwitch.addEventListener('change', () => {
@@ -110,3 +116,72 @@ darkModeSwitch.addEventListener('change', () => {
 
     body.classList.toggle('dark-mode');
 });
+
+// Haetaan kyselyn kentät ja lähetysnappi
+/*const ageInput = document.getElementById('age');
+const goalSelect = document.getElementById('goal');
+const levelSelect = document.getElementById('level');
+const submitButton = document.getElementById('submit');
+
+// Lisätään kuuntelija lähetysnapille
+submitButton.addEventListener('click', submitForm);
+
+function submitForm() {
+    // Haetaan käyttäjän syötteet
+    const age = ageInput.value;
+    const goal = goalSelect.value;
+    const level = levelSelect.value;
+
+    // Tulostetaan vastaukset konsoliin (voit muuttaa tätä osaa mukautuaksesi tarpeisiisi)
+    console.log('Ikä: ' + age);
+    console.log('Treenaamisen tavoite: ' + goal);
+    console.log('Taso treenaajana: ' + level);
+
+    // Tyhjennetään kentät lomakkeen lähettämisen jälkeen
+    ageInput.value = '';
+    goalSelect.value = '';
+    levelSelect.value = '';
+}*/
+
+
+
+
+
+/*let isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+// Haetaan liukukytkin ja lisätään siihen kuuntelija
+const darkModeSwitch = document.getElementById('darkModeSwitch');
+darkModeSwitch.addEventListener('change', toggleDarkMode);
+
+// Päivitetään nappi ja sivun tyyli sen mukaisesti
+function updateDarkMode() {
+    if (isDarkMode) {
+        enableDarkMode();
+    } else {
+        disableDarkMode();
+    }
+}
+
+updateDarkMode(); // Päivitetään tila sivun latauksen yhteydessä
+
+// Käsitellään tumman tilan tilan vaihtaminen
+function toggleDarkMode() {
+    isDarkMode = !isDarkMode; // Vaihdetaan tila
+    updateDarkMode(); // Päivitetään tila ja tyyli
+    // Päivitetään tallennettu tila
+    localStorage.setItem('darkMode', isDarkMode ? 'true' : 'false');
+}
+
+// Tumman tilan päälle laittaminen
+function enableDarkMode() {
+    // Lisätään CSS-luokka body-elementille
+    document.body.classList.add('dark-mode');
+}
+
+// Tumman tilan pois päältä laittaminen
+function disableDarkMode() {
+    // Poistetaan CSS-luokka body-elementiltä
+    document.body.classList.remove('dark-mode');
+}*/
+
+
