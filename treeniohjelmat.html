@@ -9,11 +9,20 @@
         <h1>Treeniohjelmat</h1>
     </header>
     
+        <!-- Yläpaneeli -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Pääsivu</a></li>
+                <li><a href="harjoitteluohjeet.html">Harjoitteluohjeet</a></li>
+                <li><a href="ruokavaliot.html">Ruokavaliot</a></li>
+            </ul>
+        </nav>
+
     <div class="question-container">
         <h2>Tervetuloa treenaamaan!</h2>
         <p>Vastaa muutamaan kysymykseen, jotta voimme räätälöidä sinulle sopivan treeniohjelman.</p>
 
-        <form id="treeni-form"></form>
+        <form id="treeni-form">
             <label for="age">Ikä:</label>
             <select id="age" name="age" required>
                 <option value="" disabled selected>Valitse ikäsi</option>
@@ -26,13 +35,12 @@
                 <option value=">65">yli 65 vuotta</option>
             </select><br>
 
-
             <label for="goal">Treenaamisen tavoite:</label>
             <select id="goal" name="goal" required>
                 <option value="" disabled selected>Valitse tavoitteesi</option>
-                <option value="Lihasmassan kasvatus">Lihasmassan kasvatus</option>
+                <option value="Lihasmassan kasvattaminen">Lihasmassan kasvattaminen</option>
                 <option value="Liikkuvuuden parantaminen">Liikkuvuuden parantaminen</option>
-                <option value="Laihdutus">Laihdutus</option>
+                <option value="Laihduttaminen">Laihduttaminen</option>
             </select><br>
 
             <label for="level">Taso treenaajana:</label>
@@ -43,10 +51,12 @@
                 <option value="Kokenut">Kokenut</option>
             </select><br>
 
+            <div id="error-message" class="error-message"></div>
             <button id="submit">Lähetä</button>
         </form>
+        <table id="result-table"></table>
     </div>
-    
+    <table id="result-table"></table>
     <script src="assets/javascript/treeniohjelmat.js"></script>
 </body>
 </html>

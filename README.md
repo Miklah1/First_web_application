@@ -1,17 +1,20 @@
 # Websovellusprojekti
-Voimatasojen kasvattaminen, liikkuvuuden parantaminen, rasvaprosentin alentaminen
-Tasosi treenaajana aloittelija, harjaantunut ja kokenut (Beginner, intermediate, advanced).
+
 
 Kurssin arviointi 
 HTML (25%)
-1/5: OK
+1/5:
 Basic HTML structure is present.
+
+Tehty
 
 2/5: OK
 HTML structure with clear content differentiation (headings, paragraphs, lists).
 
 3/5:
 Use of forms, links, and media.
+
+Tehty. Treeniohjelmat -sivun kyselylomake 
 
 4/5:
 Tables are effectively used.
@@ -37,12 +40,16 @@ Comparing the types
 Styling demonstrates a strong grasp of layout principles, aesthetics, and user experience.
 
 JavaScript Basics (25%)
-1/5: OK "Tumma tila" -nappi
+1/5:
 Simple interactions (like alerts on button click).
 
+Tehty. "Treeniohjelmat" -sivulla, kun syöttää s-postin ja klikkaa "Lähetä"-nappia. (S-postin syöttö ilmestyy, kun syötetään kyselyyn esim: Ikä: Mikä tahansa, Tavoite: Liikkuvuuden parantaminen, Taso: Kokenut).
+
 Learn about JS Alerts
-2/5: OK. mm. "Tumma tila" -nappi ja "Näytä liike" -nappi
+2/5: 
 Multiple event listeners and basic DOM manipulations.
+
+Tehty. mm. "Tumma tila" -nappi ja "Näytä liike" -nappi
 
 3/5:
 Use of arrays, objects, and functions.
@@ -63,8 +70,10 @@ Successful implementation of an AJAX call or Fetch.
 3/5:
 Data from the asynchronous call is displayed on the webpage.
 
-4/5:
+4/5: 
 Error handling is implemented (for failed API calls, etc.).
+
+OK. Tulee virheilmoitus ja lomakkeen lähettäminen estetään, jos kaikkiin kolmeen kohtaan ei ole valittu jotain Treeniohjelmat -sivun kyselyssä.
 
 5/5:
 Effective use of asynchronous data to enhance user experience (like filtering, sorting).
