@@ -92,8 +92,8 @@ p{
 }
 
 .sarakkeen-osa img {
-    width: 100%; /* Määritä kuvan leveys tarpeidesi mukaan */
-    height: 400px;  /*Säilytä kuvasuhteet */
+    width: 100%; /* Kuvan leveys */
+    height: 400px;  /*Kuvan korkeus */
     object-fit: cover; /* Säilytä kuvasuhteet ja täytä elementti */
     transition: transform 0.2s; /* Lisätään siirtymäefekti hoverille */
     box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Lisätään varjo kuville */
