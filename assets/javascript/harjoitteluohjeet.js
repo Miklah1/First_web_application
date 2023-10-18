@@ -5,6 +5,48 @@ document.addEventListener("DOMContentLoaded", function () {
     const naytaLiikeButton = document.getElementById("naytaLiike");
     const liikkeenKuvausDiv = document.getElementById("liikkeenKuvaus");
 
+    naytaLiikeButton.addEventListener("click", function () {
+        const valittuLihasryhma = lihasryhmaValinta.value;
+
+        
+        fetch('https://miklah1.github.io/Server//liikkeet.json')
+            .then(response => response.json())
+            .then(data => {
+                const liikeOhjeet = data[valittuLihasryhma];
+
+                if (liikeOhjeet) {
+                    liikkeenKuvausDiv.innerHTML = `
+                        <p>Kehonpainoharjoitus:</p>
+                        <p>${liikeOhjeet.kehonpaino}</p>
+                        <ul>
+                            <li>${liikeOhjeet.tarkemmatHuomiot[0]}</li>
+                            <li>${liikeOhjeet.tarkemmatHuomiot[1]}</li>
+                            <li>${liikeOhjeet.tarkemmatHuomiot[2]}</li>
+                        </ul>
+                        <p>Kuntosalilla:</p>
+                        <p>${liikeOhjeet.kuntosalilla}</p>
+                        <ul>
+                            <li>${liikeOhjeet.tarkemmatHuomiot[0]}</li>
+                            <li>${liikeOhjeet.tarkemmatHuomiot[1]}</li>
+                            <li>${liikeOhjeet.tarkemmatHuomiot[2]}</li>
+                        </ul>
+                    `;
+                } else {
+                    liikkeenKuvausDiv.textContent = "Valitse oikea lihasryhmä.";
+                }
+            })
+            .catch(error => {
+                console.error("Virhe: " + error);
+            });
+    });
+});
+
+
+/*document.addEventListener("DOMContentLoaded", function () {
+    const lihasryhmaValinta = document.getElementById("lihasryhma");
+    const naytaLiikeButton = document.getElementById("naytaLiike");
+    const liikkeenKuvausDiv = document.getElementById("liikkeenKuvaus");
+
     // Tietokanta liikkeille
     const liikkeet = {
         rinta: {
@@ -98,4 +140,4 @@ document.addEventListener("DOMContentLoaded", function () {
             liikkeenKuvausDiv.textContent = "Valitse oikea lihasryhmä.";
         }
     });
-});
+});*/
