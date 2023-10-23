@@ -41,6 +41,19 @@ header img{
     font-weight: bold;
 }
 
+/* Virheilmoitus */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Korostus punaisella reunuksella */
+select[style*="border-color: red"] {
+    border-color: red;
+    border-width: 2px;
+}
+
 .dark-mode { /* Tumma tila */
     background-color: #252525; /* Tumman tilan taustaväri */
 }
@@ -52,13 +65,14 @@ header img{
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: #fff;
 }
 
 select {
     width: 100%;
     padding: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    
 }
 
 button {

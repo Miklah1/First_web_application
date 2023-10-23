@@ -24,6 +24,7 @@
     <div class="container">
         <label for="lihasryhma">Valitse lihasryhmä:</label>
         <select id="lihasryhma">
+            <option value="" disabled selected>Valitse lihasryhma</option>
             <option value="rinta">Rinta</option>
             <option value="selka">Selkä</option>
             <option value="jalat">Jalat</option>
@@ -33,9 +34,8 @@
             <option value="hauis">Hauis</option>
             <option value="vatsa">Vatsa</option>
 
-
-            <!-- Lisää muita lihasryhmiä tarvittaessa -->
         </select>
+        <div id="error-message" class="error-message"></div><br>
         <button id="naytaLiike">Näytä liike</button>
         <div id="liikkeenKuvaus">
             <!-- Tähän tulee liikkeen kuvaus -->

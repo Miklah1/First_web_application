@@ -1,5 +1,6 @@
 # Websovellusprojekti
 
+Sivu jäi sisällöltään hieman kesken, mutta lähes kaikki 
 
 Kurssin arviointi 
 HTML (25%)
@@ -75,6 +76,8 @@ Tehty. esim. ruokavaliot -sivun changeImage -funktio ja harjoitteluohjeille teht
 4/5:
 Advanced logic, looping through data, and dynamic DOM updates.
 
+Tehty. esim. Treeniohjelman luominen käyttäjän syöttämien tietojen perusteella.
+
 5/5:
 Consistent use of Object-Oriented JavaScript principles.
 
@@ -87,13 +90,17 @@ Tehty. Ruokavaliot -sivun kuva vaihtuu 5 sekunnin välein.
 2/5:
 Successful implementation of an AJAX call or Fetch.
 
+Tehty. Harjoitteluohjeet -sivun liikkeet haetaan ulkoiselta palvelimelta Fetch-kutsulla, kun "Näytä liike" -nappia klikataan.
+
 3/5:
 Data from the asynchronous call is displayed on the webpage.
+
+Tehty. Harjoitteluohjeet -sivun liikkeet haetaan ulkoiselta palvelimelta Fetch-kutsulla, ja näytetään käyttäjälle, kun "Näytä liike" -nappia klikataan.
 
 4/5: 
 Error handling is implemented (for failed API calls, etc.).
 
-Tehty. Tulee virheilmoitus ja lomakkeen lähettäminen estetään, jos kaikkiin kolmeen kohtaan ei ole valittu jotain Treeniohjelmat -sivun kyselyssä ja klikataan "Lähetä" -nappia.
+Tehty. Konsoliin tulee virheilmoituksia, jos fetch-kutsu ei mene läpi jostain syystä.
 
 5/5:
 Effective use of asynchronous data to enhance user experience (like filtering, sorting).
