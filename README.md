@@ -1,6 +1,6 @@
 # Websovellusprojekti
 
-Sivu jäi sisällöltään hieman kesken, mutta lähes kaikki 
+Sivu jäi sisällöltään kesken, mutta lähes kaikki vaadittavat toiminnot pitäisi kuitenkin löytyä. Omien laskujen mukaan 19/20.
 
 Kurssin arviointi 
 HTML (25%)
@@ -17,7 +17,7 @@ Tehty.
 3/5:
 Use of forms, links, and media.
 
-Tehty. esim. Treeniohjelmat -sivun kyselylomake 
+Tehty. esim. Treeniohjelmat -sivun kyselylomake. (Treeniohjelmat ehdin tehdä vain tavoitetteelle "Lihasmassan kasvattaminen").
 
 4/5:
 Tables are effectively used.
@@ -38,7 +38,7 @@ Tehty.
 2/5:
 Use of classes and IDs to style specific elements.
 
-Tehty.
+Tehty. Esim. Tumma tila -napille tehty slider luokka
 
 3/5:
 Implementation of responsive design elements.
@@ -62,7 +62,6 @@ Simple interactions (like alerts on button click).
 
 Tehty. "Treeniohjelmat" -sivulla, kun syöttää s-postin ja klikkaa "Lähetä"-nappia. (S-postin syöttö ilmestyy, kun syötetään kyselyyn esim: Ikä: Mikä tahansa, Tavoite: Liikkuvuuden parantaminen, Taso: Kokenut).
 
-Learn about JS Alerts
 2/5: 
 Multiple event listeners and basic DOM manipulations.
 
@@ -104,3 +103,5 @@ Tehty. Konsoliin tulee virheilmoituksia, jos fetch-kutsu ei mene läpi jostain s
 
 5/5:
 Effective use of asynchronous data to enhance user experience (like filtering, sorting).
+
+Tehty. Ruokavaliot -sivulla (Joka jäi pahasti kesken :D) taulukkoa pystyy järjestelemään nousevaan ja laskevaan aakkosjärjestykseen sarakkeiden otsikoita klikkaamalla.

@@ -41,38 +41,29 @@ header img{
     font-weight: bold;
 }
 
-.dark-mode { /* Tumma tila */
-    background-color: #252525; /* Tumman tilan taustaväri */
-}
-
-.container {
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: #085686;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-select {
+/* Lisäämme tyylit taulukolle ja sen sarakkeille */
+table {
+    border-collapse: collapse;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    
 }
 
-button {
-    display: block;
-    background-color: #333;
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #085686;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
-#liikkeenKuvaus {
-    margin-top: 20px;
-    font-weight: bold;
+/* Lisäämme tyylit otsikon klikattaville sarakkeille */
+th.asc:after {
+    content: ' ↑';
 }
 
+th.desc:after {
+    content: ' ↓';
+}

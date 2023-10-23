@@ -7,7 +7,7 @@ const errorMessage = document.getElementById("error-message");
 const resultTable = document.getElementById("result-table");
 
 // Lisätään kuuntelija lomakkeen lähettämiseen
-treeniForm.addEventListener("submit", validateForm);
+treeniForm.addEventListener("submit", generateTrainingPlan);
 
 // Luo treeniohjelma
 function generateTrainingPlan(event) {
@@ -133,46 +133,3 @@ function generateTrainingPlan(event) {
         });
     }
 }
-
-// Tarkista lomakkeen validointi
-function validateForm(event) {
-    // Tarkistetaan, onko "Valitse" valittuna jossain valikossa
-    if (ageSelect.value === "" || goalSelect.value === "" || levelSelect.value === "") {
-        event.preventDefault(); // Estetään lomakkeen lähetys
-        errorMessage.textContent = "Valitse kaikki vaihtoehdot."; // Näytetään virheilmoitus
-        errorMessage.style.color = "red"; // Muutetaan tekstiväri punaiseksi
-
-        // Korostetaan valikot punaisella reunuksella
-        if (ageSelect.value === "") {
-            ageSelect.style.borderColor = "red";
-        }
-        if (goalSelect.value === "") {
-            goalSelect.style.borderColor = "red";
-        }
-        if (levelSelect.value === "") {
-            levelSelect.style.borderColor = "red";
-        }
-    } else {
-        // Tulostetaan lomakkeen tiedot VSC:n terminaaliin
-        console.log('Ikä: ' + ageSelect.value);
-        console.log('Treenaamisen tavoite: ' + goalSelect.value);
-        console.log('Taso treenaajana: ' + levelSelect.value);
-    }
-
-    // Kutsu treeniohjelman generointifunktiota
-    generateTrainingPlan(event);
-}
-
-// Tyhjennä virheilmoitus ja palauta valikoiden reunukset alkuperäiseen tilaan
-function resetForm() {
-    errorMessage.textContent = "";
-    errorMessage.style.color = "";
-    ageSelect.style.borderColor = "";
-    goalSelect.style.borderColor = "";
-    levelSelect.style.borderColor = "";
-}
-
-// Lisää tapahtumankäsittelijät valikoiden muutoksille
-ageSelect.addEventListener("change", resetForm);
-goalSelect.addEventListener("change", resetForm);
-levelSelect.addEventListener("change", resetForm);

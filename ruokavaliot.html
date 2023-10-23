@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuntosaliharjoitteluvinkit</title>
+    <title>Ruokavaliot</title>
     <link rel="stylesheet" href="css/ruokavaliot.css" type="text/css">
 </head>
 <body>
@@ -12,16 +12,41 @@
         <h1>Ruokavaliot</h1>
     </header>
 
-            <!-- Yläpaneeli -->
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Pääsivu</a></li>
-                    <li><a href="harjoitteluohjeet.html">Harjoitteluohjeet</a></li>
-                    <li><a href="treeniohjelmat.html">Treeniohjelmat</a></li>
+    <!-- Yläpaneeli -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Pääsivu</a></li>
+            <li><a href="harjoitteluohjeet.html">Harjoitteluohjeet</a></li>
+            <li><a href="treeniohjelmat.html">Treeniohjelmat</a></li>
+        </ul>
+    </nav>
 
-                </ul>
-            </nav>
-
+    <table id="dietTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Ruokavalio</th>
+                <th onclick="sortTable(1)">Kuvaus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kasvisruokavalio</td>
+                <td>Ruokavalio, joka ei sisällä lihaa.</td>
+            </tr>
+            <tr>
+                <td>Ketoruokavalio</td>
+                <td>Vähähiilihydraattinen ja runsasrasvainen ruokavalio.</td>
+            </tr>
+            <tr>
+                <td>Vegaaninen ruokavalio</td>
+                <td>Ruokavalio, joka ei sisällä eläinperäisiä tuotteita.</td>
+            </tr>
+            <tr>
+                <td>Gluteeniton ruokavalio</td>
+                <td>Ruokavalio, joka ei sisällä gluteenia sisältäviä viljatuotteita.</td>
+            </tr>
+        </tbody>
+    </table>
 
     <script src="assets/javascript/ruokavaliot.js"></script>
 </body>
